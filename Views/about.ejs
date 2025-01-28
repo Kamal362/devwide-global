@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <main>
+    <!-- Add your picture here -->
+    <img src="images/profile.jpg" alt="Your Name" class="profile-picture">
+    
+    <!-- Text describing you -->
+    <div class="about-content">
+      <h1>About Me</h1>
+      <p>I'm a <span class="highlight">software engineer</span> with a relentless passion for building robust, scalable, and secure systems. With a focus on <span class="highlight">backend development</span> and <span class="highlight">cybersecurity</span>, I thrive on solving complex problems and creating solutions that make a real impact.</p>
+      <p>Over the years, I've honed my skills in designing high-performance APIs, securing sensitive data, and optimizing systems for peak efficiency. Whether it's defending against cyber threats or architecting seamless backend infrastructures, I'm always up for a challenge.</p>
+      <p>When I'm not coding, you'll find me exploring the latest in tech trends, contributing to open-source projects, or mentoring aspiring developers. I believe in the power of technology to transform lives, and I'm committed to pushing the boundaries of what's possible.</p>
+      
+      <!-- Skills Section -->
+      <div class="skills-list">
+        <div class="skill">Backend Development</div>
+        <div class="skill">Cybersecurity</div>
+        <div class="skill">API Design</div>
+        <div class="skill">System Architecture</div>
+        <div class="skill">Cloud Computing</div>
+        <div class="skill">DevOps</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Open-Source Contributor</div>
+      </div>
+    </div>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+</html>

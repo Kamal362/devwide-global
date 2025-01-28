@@ -1,0 +1,334 @@
+/* Custom Styles for Professional Portfolio */
+:root {
+    --primary-color: #1abc9c;
+    --secondary-color: #2c3e50;
+    --background-light: #f9f9f9;
+    --text-color: #333;
+    --text-light: #ecf0f1;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --border-radius: 10px;
+    --spacing: 20px;
+  }
+  
+  /* Base Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-light);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Fixed Header */
+  .header {
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 1rem 0;
+    z-index: 1000; /* Ensure header is above other content */
+    margin-bottom: 0;
+  
+  }
+  
+  /* Fixed Footer */
+  .footer {
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: var(--spacing) 0;
+    z-index: 1000; /* Ensure footer is above other content */
+  }
+  
+  /* Scrollable Content */
+  main {
+    padding-top: 80px; /* Space for fixed header */
+    padding-bottom: 80px; /* Space for fixed footer */
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-light) !important;
+  }
+  
+  .navbar-nav .nav-link {
+    color: var(--text-light) !important;
+    margin: 0 10px;
+    font-weight: 500;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 100px 0;
+    text-align: center;
+    
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: var(--spacing);
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 10px 30px;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+  }
+  
+  .hero .btn:hover {
+    background-color: #34495e;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 80px 0;
+    background-color: #fff;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: var(--spacing);
+    color: var(--secondary-color);
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Projects Section */
+  .projects {
+    padding: 80px 0;
+    background-color: var(--background-light);
+    
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+    text-align: center;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: var(--spacing);
+  }
+  
+  .project-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 8px 20px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .project-card a:hover {
+    background-color: #16a085;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 80px 0;
+    background-color: var(--background-light);
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+    text-align: center;
+  }
+  
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing);
+  }
+  
+  .testimonial-card {
+    background-color: #fff;
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+  }
+  
+  .testimonial-card p {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+  }
+  
+  .testimonial-card h4 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-top: 10px;
+  }
+  
+  /* Contact Section */
+  /* .contact {
+    padding: 80px 0;
+    background-color: #fff;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: var(--spacing);
+    color: var(--secondary-color);
+    text-align: center;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact label {
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: var(--spacing);
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+  }
+  
+  .contact button {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 10px 30px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+  }
+  
+  .contact button:hover {
+    background-color: #16a085;
+  } */
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.3rem;
+      
+    }
+   ul{
+      text-align: center;
+      align-items: center;
+      text-transform: capitalize;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.1rem;
+    }
+  
+    .about h2,
+    .projects h2,
+    .testimonials h2 {
+      font-size: 2rem;
+    }
+  
+    .project-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .project-card p,
+    .testimonial-card p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+   ul{
+      text-align: center;
+      align-items: center;
+      text-transform: capitalize;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .about h2,
+    .projects h2,
+    .testimonials h2 {
+      font-size: 1.8rem;
+    }
+  
+    .project-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .project-card p,
+    .testimonial-card p {
+      font-size: 0.8rem;
+    }
+  }
